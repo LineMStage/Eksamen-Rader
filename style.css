@@ -1,0 +1,1438 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+
+
+
+.logo img {
+    max-height: 50px;
+}
+
+/* ===== NAVIGATION ===== */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a {
+    padding: 0 20px; /* Tilføj 10px til venstre og højre */
+    text-decoration: none; /* Fjern understregning */
+    color: #fff; /* Justér farve efter behov */
+}
+
+.nav-links a:hover {
+    color: #f47920;
+}
+.nav-links {
+    margin-right: 50px; /* Ryk hele menuen 20px til venstre */
+}
+
+/* ===== BURGER MENU ===== */
+.burger-menu {
+    display: none; /* Skjules på store skærme */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger-menu .line {
+    width: 30px;
+    height: 3px;
+    background-color: #f47920;
+}
+.nav-links a {
+    font-family: 'Inter', sans-serif; /* Brug Inter Black */
+    font-weight: 900; /* Fed skrift */
+    font-size: 1.5rem; /* Skriftstørrelse */
+    color: #000; /* Sort tekstfarve */
+    text-transform: uppercase; /* Blokbogstaver */
+    text-decoration: none; /* Fjern understregning */
+}
+
+/* Luk-knap (krydset) */
+.close-menu {
+    color: #000 !important; /* Sort farve til krydset */
+}
+/* Burger-menu styling - sort tekst */
+.nav-links.menu-open a {
+    color: #000 !important; /* Sort farve KUN i burger-menuen */
+}
+/* ========== Navigation Links ========== */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #f47920;
+}
+.nav-links.menu-open {
+    display: flex; /* Vis navigationen, når burger-menuen aktiveres */
+}
+/* ========== Logo styling ========== */
+
+header .logo img {
+    max-height: 100px; /* Juster logoets højde */
+    width: auto; /* Bevar billedets proportioner */
+   margin-left: 40px; /* Skubber logoet mod højre */
+
+}
+/* Navigation Styling */
+nav ul {
+    display: flex;
+    gap: 2rem; /* Luft mellem links */
+    margin-left: -2rem; /* Ryk navigationen en smule mod venstre */
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+/* ===========================
+   Footer Styling
+   =========================== */
+   footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+footer address {
+    font-style: normal;
+    line-height: 1.6;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: orange;
+}
+
+/* Social Media Icons */
+footer .social-media {
+    display: flex;
+    gap: 2rem;
+}
+footer .social-media img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+footer .social-media img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer Logo */
+footer .footer-logo img {
+    max-height: 100px;
+    width: auto;
+    transition: opacity 0.3s ease;
+}
+footer .footer-logo img:hover {
+    opacity: 0.8;
+}
+
+/* Baggrund for hele siden */
+body {
+    background-image: url('../img/baggrund.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+/* ========== Frivillig side ========== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main layout */
+main {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem; /* Plads mellem grid og den lodrette tekst */
+    padding: 2rem;
+}
+
+/* Team grid layout */
+.team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* To kolonner */
+    gap: 2rem; /* Plads mellem billederne */
+    width: 100%;
+}
+.team figure {
+    margin: 0;
+    text-align: center; /* Centrerer teksten under billederne */
+}
+.team img {
+    width: 100%; /* Billedet fylder containeren */
+    max-width: 400px; /* Sæt en max-bredde */
+    height: 300px; /* Gør billederne firkantede */
+    object-fit: cover; /* Sikrer at billedet beskæres pænt */
+    border-radius: 0; /* Sørger for skarpe kanter */
+    
+}
+.team figcaption {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: orange;
+}
+.image-footnote {
+    display: block; /* Sørg for, at den står under navnet */
+    font-size: 0.8rem; /* Gør teksten mindre */
+    color: #cacaca; /* Grå farve for diskret fodnote */
+    margin-top: 4px; /* Giv lidt luft mellem navnet og fodnoten */
+    font-style: italic; /* Valgfri - kursiv tekst */
+}
+
+/* Lodret tekst til højre */
+.vertical-text {
+    writing-mode: vertical-rl; /* Gør teksten lodret */
+    text-orientation: mixed;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+    margin-left: auto; /* Skubber teksten helt til højre */
+    margin-right: 0; /* Sørger for, at der ikke er margin på venstre side */
+    padding-left: 1rem; /* Lidt luft mellem tekst og billeder */
+    text-align: center;
+}
+
+/* Styling af bølgende tekst */
+.wave-text {
+    width: 100%; /* Fylder hele bredden af forælderen */
+    height: auto; /* Skalerer automatisk i højden */
+    overflow: visible; /* Sørger for, at alt vises */
+    margin: 0; /* Fjerner unødvendige margener */
+}
+.text-on-wave {
+    font-size: 1.1rem; /* Større tekst */
+    font-weight: bold; /* Fed skrift */
+    fill: black; /* Sort farve */
+    letter-spacing: 2.5px; /* Luft mellem bogstaver */
+}
+
+/* Sektion med overskrift og tekst */
+.frivillig-section {
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 3rem;
+}
+.frivillig-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+.frivillig-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0 auto 1.5rem;
+    max-width: 800px;
+}
+.frivillig-contact {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+.frivillig-contact a {
+    color: orange;
+    text-decoration: none;
+}
+.frivillig-contact a:hover {
+    text-decoration: underline;
+}
+
+/* ========== Om Rader side ========== */
+.about-rader {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Afstand mellem sektionerne */
+    padding: 2rem;
+}
+.about-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Indhold i to kolonner (desktop) */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Afstand mellem billede og tekst */
+    justify-content: center;
+}
+.about-image img {
+    width: 100%; /* Fyld hele containeren */
+    max-width: 400px; /* Fast bredde */
+    height: 400px; /* Fast højde for firkantede billeder */
+    object-fit: cover; /* Beskær billedet pænt, så det passer */
+    border-radius: 0; /* Skarpe kanter */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Let skygge */
+}
+.about-text {
+    max-width: 500px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* ========== Forside kodning ========== */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Video-sektion styling */
+.hero-video {
+    width: 100%; /* Fylder hele bredden */
+    height: 100vh; /* Fylder hele viewportens højde */
+    overflow: hidden; /* Sørger for, at videoen ikke strækker sig ud over sektionen */
+    position: relative; /* Muliggør placering */
+    top: 0;
+}
+.hero-video video {
+    width: 100%; /* Videoen fylder bredden */
+    height: 85%; /* Videoen fylder højden */
+    object-fit: cover; /* Videoen beskæres, så den passer pænt */
+    position: absolute; /* Dækker sektionen helt */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Sørger for, at videoen ligger bag header og andet indhold */
+}
+/* Events-sektion styling */
+.events {
+    display: flex;
+    justify-content: center; /* Centrerer billederne */
+    gap: 5rem; /* Afstand mellem billeder */
+    padding: 2rem; /* Luft omkring */
+    flex-wrap: wrap; /* Tillader billederne at bryde over flere linjer */
+}
+
+/* Events-sektion styling */
+.events {
+    display: flex;
+    justify-content: center; /* Centrerer billederne */
+    gap: 5rem; /* Små mellemrum mellem billeder */
+    padding: 0 2rem; /* Luft i siderne */
+    margin: 0; /* Fjerner margin */
+}
+
+/* Events-sektion styling */
+.events {
+    display: flex;
+    justify-content: space-between; /* Placerer billederne med mellemrum */
+    gap: 4rem; /* Lidt mellemrum mellem billederne */
+    margin: 0; /* Fjerner margin */
+    padding: 0; /* Fjerner padding */
+}
+.event-card {
+    flex: 1; /* Sørger for at billeder fylder lige meget */
+    height: 450px; /* Ens højde for billeder */
+    overflow: hidden; /* Skjuler overskud fra billedet */
+    box-sizing: border-box; /* Sørger for, at padding ikke påvirker størrelsen */
+}
+.event-card img {
+    width: 100%; /* Fylder hele bredden */
+    height: 100%; /* Fylder hele højden */
+    object-fit: cover; /* Sikrer, at billedet beskæres pænt og udfylder */
+    border-radius: 0; /* Fjerner afrundede hjørner */
+    display: block; /* Sikrer korrekt visning */
+}
+.se-more-button {
+    text-align: center; /* Centrer knappen */
+    margin-top: 2rem; /* Luft over knappen */
+    margin-bottom: 5rem; /* Mere luft under knappen */
+}
+.se-more-button a {
+    display: inline-block; /* Sørger for, at padding fungerer korrekt */
+    padding: 10px 20px; /* Luft inde i boksen */
+    border: 2px solid #000; /* Sort kant rundt om */
+    text-decoration: none; /* Fjern understregning */
+    color: #000; /* Sort tekstfarve */
+    background-color: #fff; /* Hvid baggrund */
+    font-weight: bold; /* Fed tekst */
+    text-transform: uppercase; /* Blokbogstaver */
+    transition: all 0.3s ease; /* Glidende effekt ved hover */
+}
+
+/* Hover-effekt */
+.se-more-button a:hover {
+    background-color: #ff6600; /* Sort baggrund ved hover */
+}
+
+.situation-container {
+    display: flex;
+    align-items: stretch; /* Sørger for at begge sektioner fylder samme højde */
+    height: 450px; /* Fast højde */
+    width: 100%; /* Fylder hele bredden */
+}
+
+.text-section {
+    background-color: #000; /* Sort baggrund */
+    color: #fff;
+    flex: 1; /* Fylder halvdelen af bredden */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.text-section h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #f47920; /* Orange baggrund */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+.events-button-section {
+    text-align: center; /* Centrerer knappen */
+    margin-top: 2rem; /* Luft over knappen */
+    margin-bottom: 2rem; /* Luft under knappen */
+}
+
+.events-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #f47920; /* Orange baggrund */
+    color: #fff; /* Hvid tekst */
+    text-decoration: none; /* Fjern understregning */
+    font-size: 1rem; /* Tekststørrelse */
+    font-weight: bold; /* Fed tekst */
+    text-transform: uppercase; /* Store bogstaver */
+    border-radius: 0; /* Skarpe kanter */
+    transition: background-color 0.3s ease; /* Glidende hover-effekt */
+}
+
+.events-btn:hover {
+    background-color: #d36818; /* Mørkere orange ved hover */
+}
+
+.image-section {
+    flex: 1; /* Fylder halvdelen af bredden */
+    background: url('../img/raderbw.png') no-repeat center center/cover; /* Baggrundsbillede */
+}
+.events-button-section {
+    text-align: center; /* Centrerer knappen */
+    margin-top: 2rem; /* Luft over knappen */
+    margin-bottom: 2rem; /* Luft under knappen */
+}
+
+.events-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #f47920; /* Orange baggrund */
+    color: #fff; /* Hvid tekst */
+    text-decoration: none; /* Fjern understregning */
+    font-size: 1rem; /* Tekststørrelse */
+    font-weight: bold; /* Fed tekst */
+    text-transform: uppercase; /* Store bogstaver */
+    border-radius: 0; /* Skarpe kanter */
+    transition: background-color 0.3s ease; /* Glidende hover-effekt */
+}
+
+.events-btn:hover {
+    background-color: #d36818; /* Mørkere orange ved hover */
+}
+
+.situation-container {
+    display: flex;
+    align-items: stretch; /* Sørger for at begge sektioner fylder samme højde */
+    height: 450px; /* Fast højde */
+    width: 100%; /* Fylder hele bredden */
+    margin-top: 12rem; /* Tilføjer luft over sektionen */
+    margin-bottom: 7rem; /* Luft under sektionen */
+}
+.section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; /* Mellemrum mellem boks og billede */
+    margin-bottom: 5rem; /* Luft under sektionen */
+}
+
+.text-section {
+    background-color: #000; /* Sort baggrund */
+    color: #fff;
+    flex: 1; /* Fylder halvdelen af bredden */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.text-section h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #f47920; /* Orange baggrund */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    border-radius: 0; /* Fjernet afrundede kanter */
+}
+
+.read-more-btn:hover {
+    background-color: #d36818; /* Mørkere orange ved hover */
+}
+
+.image-section {
+    flex: 1; /* Fylder halvdelen af bredden */
+    background: url('../img/raderbw.png') no-repeat center center/cover; /* Baggrundsbillede */
+}
+
+/* Instagram sektion på forside */
+.instagram-section {
+    text-align: center;
+    padding: 2rem 0; /* Luft over og under sektionen */
+    margin-bottom: 4rem; /* Sørg for afstand til footeren */
+    position: relative; /* Sørg for korrekt placering */
+    z-index: 1; /* Sørger for at denne sektion vises over footeren */
+}
+
+/* Overskrift styling */
+.instagram-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem; /* Reducer afstand under overskriften */
+    text-transform: uppercase;
+}
+
+/* Galleri styling */
+.instagram-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Justér mellemrum mellem embeds */
+    flex-wrap: wrap; /* Tillader flere rækker */
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer galleriet */
+}
+
+/* ========== Kontakt ========== */
+
+/* Hvid boks med sort kant og skarpe kanter */
+.kontakt-wrapper {
+    background-color: #fff; /* Hvid baggrund */
+    padding: 20px; /* Luft inde i boksen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Let skygge */
+    border: 1px solid #000; /* Tynd sort kant */
+    width: 900px; /* Fast bredde på desktop */
+    margin-left: auto; /* Skubber boksen helt ud til højre */
+    margin-right: 0;
+    box-sizing: border-box; /* Inkluder padding i bredden */
+    border-radius: 0; /* Skarpe kanter */
+}
+
+/* Kontakt info */
+.kontakt-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolonner */
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.kontakt-info h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.kontakt-info p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Formular styling */
+.kontakt-formular {
+    display: grid;
+    gap: 20px; /* Afstand mellem felterne */
+}
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* To kolonner */
+    gap: 20px;
+}
+.kontakt-formular input,
+.kontakt-formular textarea {
+    padding: 10px;
+    border: none;
+    background-color: #e6e6e6;
+    font-size: 1em;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.kontakt-formular textarea {
+    resize: none;
+    height: 150px;
+}
+.kontakt-formular button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    margin-left: auto;
+}
+.kontakt-formular button:hover {
+    background-color: #444;
+}
+#successMessage {
+    color: rgb(0, 0, 0); /* Sort skrift */
+    font-size: 1.5rem; /* Gør teksten større */
+    font-weight: bold; /* Fed tekst */
+    margin-top: 1rem; /* Luft over beskeden */
+    text-align: center; /* Centrer beskeden */
+}
+
+.rute-link {
+    color: #004AAD; /* Link farve */
+    font-weight: bold; /* Fed tekst */
+    text-decoration: underline; /* Understregning */
+    text-align: center; /* Centrerer teksten */
+    display: block; /* Sørger for fuld bredde */
+    margin-top: 10px; /* Afstand fra kortet */
+}
+
+/* Overordnet container */
+.overskrifter {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Fjern al ekstra afstand mellem overskrifterne */
+    padding: 0;
+}
+
+/* Fælles styling for overskrifter */
+.overskrifter h1 {
+    margin: 0; /* Fjern browserens default margin */
+    line-height: 0.9; /* Reducer linjehøjde */
+    padding: 0; /* Fjern eventuel padding */
+}
+
+/* Sort fyldt tekst */
+.overskrift-sort {
+    font-family: Arial, sans-serif;
+    font-size: 6em;
+    font-weight: 900;
+    color: #000;
+}
+
+/* Tekst med outline */
+.overskrift-outline {
+    font-family: Arial, sans-serif;
+    font-size: 6em;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 2px #000;
+    margin-top: -5px; /* Træk teksten tættere sammen */
+}
+/* Global Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Kontaktside Styling  */
+.kort-overskrift {
+    text-align: center; /* Centrer teksten horisontalt */
+    font-size: 2em; /* Justér størrelsen på teksten */
+    margin: 20px 0; /* Tilføj lidt afstand over og under */
+    color: #333; /* Valgfri farve */
+}
+#kort {
+    height: 500px; /* Højde på kortet */
+    width: 100%; /* Fuldbredde */
+    margin: 0px 0; /* Lidt luft omkring kortet */
+}
+
+/* Baggrundsbillede */
+.event-kalender-side {
+    background: url('/img/baggrund.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== Navigation Links ========== */
+/* Event kalender container */
+.event-container {
+    text-align: center;
+    padding: 20px;
+}
+.event-overskrift {
+    font-size: 6em;
+    font-weight: bold;
+    margin: 20px 0;
+    margin-bottom: 50px; /* Luft under overskriften */
+    font-family: 'Inter Black', Arial, sans-serif; /* Fallback til Arial */
+    font-size: 150px; /* Størrelse på teksten */
+    font-weight: 900; /* Ekstra fed skrift */
+    color: #000000; /* Blå farve */
+    margin: 0; /* Fjern margin */
+    text-transform: uppercase; /* Store bogstaver */
+}
+/* Underskrift styling */
+.event-beskrivelse {
+    font-family: 'Montserrat Regular', Arial, sans-serif; /* Fallback til Arial */
+    font-size: 1.2rem; /* Juster størrelsen efter behov */
+    font-weight: 500; /* Normal vægt */
+    color: #000; /* Sort farve */
+    line-height: 1.5; /* Bedre læsbarhed */
+    text-align: center; /* Centreret tekst */
+    margin-top: 30px; /* Luft over underskriften */
+}
+.event-beskrivelse {
+    font-size: 1.5em;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    color: #040404;
+}
+/* Centrér hele event-container på midten */
+.event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrerer horisontalt */
+    justify-content: center; /* Centrerer vertikalt */
+    margin: 0 auto; /* Centrerer containeren på siden */
+    max-width: 1200px; /* Maks bredde for indholdet */
+    padding: 20px; /* Tilføjer lidt luft rundt om */
+    text-align: center; /* Centrerer overskriften og teksten */
+}
+
+/* EVENT Grid layout med mellemrum og centreret */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 lige store kolonner */
+    gap: 70px; /* Mere mellemrum mellem billederne */
+    width: 100%; /* Fyld hele containerens bredde */
+}
+
+/* Figur styling */
+.event-grid figure {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Billederne */
+.event-grid img {
+    width: 100%;
+    height: 300px; /* Ens højde */
+    object-fit: cover; /* Beskær billeder pænt */
+}
+
+/* Figcaption til overskriften */
+.event-grid figcaption {
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+
+/* Knap styling */
+.koeb-knap {
+    background-color: #000; /* Sort baggrund */
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0; /* Lodret padding */
+    margin: 0; /* Fjern ydre mellemrum */
+    width: 100%; /* Fyld hele containerens bredde */
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+}
+.koeb-knap:hover {
+    background-color: #ff6600; /* Orange hover-effekt */
+}
+.event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+.event-grid figure {
+    margin: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(244, 242, 242, 0.2);
+}
+.event-grid figcaption {
+    background: none; /* Ingen baggrund */
+}
+.event-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.event-grid figcaption {
+    
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.koeb-knap {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+    width: 90%;
+    text-align: center;
+}
+
+.koeb-knap:hover {
+    background-color: #ff6600;
+}
+
+/* ========== Raders ========== */
+.rader-situation {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  .container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  .text-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  .text-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  .text-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  .image-container {
+    position: relative; /* Gør det muligt at placere den orange boks bag billedet */
+    flex: 1;
+    max-width: 500px;
+  }
+  .orange-box {
+    position: absolute;
+    top: 20px; /* Forskyd boksen lidt nedad */
+    right: -50px; /* Forskyd boksen lidt til højre */
+    width: calc(100% + 40px); /* Gør boksen bredere end billedet */
+    height: calc(100% + 40px); /* Gør boksen højere end billedet */
+    background-color: #f9a36c; /* Orange farve */
+    z-index: -1; /* Sørger for at boksen er bag billedet */
+  }
+  .scene-fremtiden {
+    display: flex;
+    flex-direction: column; /* Stabler indholdet lodret */
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 40px; /* Afstand mellem billedet og teksten */
+  }
+  
+  .image-container {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Let skygge */
+    border-radius: 0; /* Fjern afrundede hjørner */
+  }
+  
+  .text-content {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .extra-section {
+    margin-top: 50px; /* Giver afstand fra det foregående indhold */
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .extra-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .extra-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+
+  /* Justér margin-top for tekstindhold i begge sektioner */
+.rader-situation .text-content p {
+    margin-top: 40px; /* Tilføj luft mellem underoverskriften og teksten */
+}
+
+.scene-fremtiden .text-content p {
+    margin-top: 40px; /* Samme justering til den anden sektion */
+}
+
+  /* Hele sidens baggrund */
+body {
+    margin: 0; /* Fjern standardmargen */
+    padding: 0; /* Fjern standardpolstring */
+    background-color: #f9f9f9; /* Ensartet baggrundsfarve */
+    font-family: Arial, sans-serif; /* Samme skrifttype overalt */
+  }
+  
+  .rader-situation,
+  .scene-fremtiden {
+    background-color: transparent; /* Sikrer, at individuelle sektioner er gennemsigtige */
+  }
+
+/* Skjul burger-menu som standard */
+.burger-menu {
+    display: none;
+}
+
+/* Skjul nav-links som standard */
+.nav-links {
+    display: flex; /* Standard navigation på store skærme */
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Skjul burger-menu som standard */
+.burger-menu {
+    display: none;
+}
+
+/* Skjul nav-links som standard */
+.nav-links {
+    display: flex; /* Standard navigation på store skærme */
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+
+
+  /*-------------------- til mobil og tablet-----------------------
+/* Responsive design for mobile screens
+/* ===========================
+   RESPONSIVE MEDIA QUERIES
+   =========================== */
+/* Vis burger-menu kun på mindre skærme */
+@media (max-width: 768px) {
+    /* Yderligere tilpasninger til mobil */
+    .burger-menu .line {
+        width: 25px; /* Mindre burger-ikon */
+    }
+    .nav-links a {
+        font-size: 1.2rem; /* Mindre tekststørrelse på mobil */
+    }
+    header {
+        display: flex;
+        justify-content: space-between; /* Logo og burger-menu på hver sin side */
+        align-items: center;
+        padding: 0.5rem 1rem; /* Juster padding for mindre header */
+     }
+     .events {
+        gap: 1rem; /* Endnu mindre mellemrum */
+        padding: 1rem; /* Mindre luft omkring sektionen */
+     }
+    .burger-menu {
+        display: flex; /* Sørg for, at burger-menu vises */
+        position: relative; /* Sikrer korrekt placering */
+        margin-left: auto; /* Placerer burger-menu ved siden af logoet */
+    }
+    .burger-menu {
+        display: none; /* Skjul burger-menu på større skærme */
+        }
+
+    .image-footnote {
+            font-size: 0.6rem; /* Mindre skriftstørrelse */
+            margin-top: 2px;  /* Mindre luft over fodnoten */
+        }
+    .menu-open {
+         display: flex;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100vh;
+         background-color: #f67e07;
+         flex-direction: column;
+         justify-content: center; /* Vertically center items */
+         align-items: center; /* Horizontally center items */
+         gap: 20px;
+        z-index: 1000;
+     }
+     .menu-open a {
+        color: #f1e7dc;
+        font-size: 70px;
+        font-weight: bold;
+        text-align: center; /* Center text horizontally */
+        text-decoration: none;
+        width: 100%; /* Make the links span full width */
+        padding: 10px 0;
+     }
+     .menu-open .nav_bb {
+        display: none;
+        }
+     .menu-open .close-menu {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 80px;
+            color: #f1e7dc;
+            cursor: pointer;
+            font-weight: bold;
+            z-index: 1010;
+            font-family: Arial;
+         }
+            
+    .sub-menu {
+           list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+            display: none; /* Initially hidden */
+            flex-direction: column;
+            gap: 10px;
+            text-align: center; /* Center submenu items */
+           }
+    .sub-menu.show {
+           display: flex; /* Show submenu when toggled */
+           }
+    .sub-menu a {
+            color: #f1e7dc;
+            font-size: 24px; /* Adjust size as needed */
+            font-weight: normal;
+            text-decoration: none;
+             }
+    nav ul {
+            display: none; /* Skjul menu som standard */
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            text-align: center;
+            gap: 1.5rem;
+            padding: 1rem 0;
+            }
+    nav ul.active {
+            display: flex; /* Vis menu når burger-menuen aktiveres */
+            }
+            nav ul li a {
+            color: white;
+            font-size: 1.2rem;
+            }
+    nav ul li a {
+            color: white;
+            font-size: 1.2rem;
+            }
+    .event-grid {
+            grid-template-columns: 1fr; /* 1 kolonne */
+            gap: 15px; /* Mindre mellemrum */
+        }                                                    
+    .event-overskrift {
+        font-size: 2.5em; /* Endnu mindre overskrift */
+    }      
+    .event-beskrivelse {
+        font-size: 1.2em; /* Reducér tekststørrelse */
+        }
+    .koeb-knap {
+        width: 100%; /* Fyld hele bredden */
+        }
+    .team {
+         grid-template-columns: 1fr; /* Enkelt kolonne */
+        }
+    .container {
+        flex-direction: column; /* Stabler billedet og teksten i en kolonne */
+        align-items: center; /* Centrerer indholdet */
+        gap: 2rem; /* Reducerer afstanden mellem billedet og teksten */
+        }
+    .image-container {
+         order: 1; /* Sørger for, at billedet kommer først */
+         max-width: 100%; /* Billedet fylder hele bredden */
+        }
+    .text-content {
+        order: 2; /* Sørger for, at teksten kommer efter billedet */
+        text-align: center; /* Centrerer teksten */
+        max-width: 90%; /* Gør teksten mindre bred */
+        }
+    .orange-box {
+        display: none;                              
+        }
+    .text-content h2, 
+    .text-content h1 {
+        font-size: 1.8rem; /* Gør overskriften mindre */
+        margin-bottom: 1rem;
+        }
+    .text-content p {
+         font-size: 1rem; /* Reducér tekststørrelsen */
+         line-height: 1.6;
+         }
+    .kontakt-wrapper {  
+        width: 100%; /* Boksen fylder hele skærmbredden */
+        padding: 15px; /* Reduceret padding */
+        margin: 0; /* Fjern margin */
+        border: none; /* Fjern kant for et simpelt udseende */
+	    box-shadow: none; /* Fjern skygge */
+        }
+     .kontakt-info {
+            grid-template-columns: 1fr 1fr; /* 2 kolonner */
+            gap: 15px 30px; /* Mindre afstand */
+        }
+    .form-row {
+         grid-template-columns: 1fr; /* En kolonne */
+         }
+    .kontakt-formular button {
+         width: 100%; /* Knappen fylder hele bredden */
+         margin: 0 auto; /* Centrer knappen */
+         }
+    .burger-menu {
+            display: none; /* Skjul som standard */
+            }
+    .logo {
+                margin-left: -10px;
+            }                     
+        
+    }
+
+    
+    /* Tablet */
+    @media (max-width: 1024px) {
+        /* Regler til tablet og mobil */
+    .event-card {
+        flex: 1 1 calc(50% - 1rem); /* To billeder pr. række */
+        }
+    .header {
+        justify-content: space-between; /* Fordeler logo og burgermenu */
+        padding: 1rem;
+         }
+    .nav ul {
+         display: none; /* Skjul den almindelige navigation */
+         }
+    .nav-links {
+            display: none; /* Skjul navigationslinks som standard */
+            flex-direction: column;
+            position: absolute;
+            top: 100%; /* Vis dem under headeren */
+            right: 0;
+            background: linear-gradient(to right, #333, #222);   
+            width: 100%;
+            padding: 2rem;
+             text-align: center;
+            z-index: 10
+        
+        }
+    .instagram-gallery .instagram-media {
+        flex: 1 1 calc(50% - 1rem); /* To embeds pr. linje */
+         }
+    .nav-links.active {
+        display: flex; /* Vis navigationslinks når aktiv */
+        }
+    .nav-links a {
+        color: white; /* Farve til links */
+        font-size: 1.5rem;
+        }
+    .events {
+        gap: 1.5rem; /* Mindre mellemrum mellem billeder */
+        padding: 1.5rem; /* Mindre luft omkring sektionen */
+        }
+    .team {
+        grid-template-columns: repeat(2, 1fr); /* To kolonner */
+        gap: 1rem;
+    }
+    .event-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
+        gap: 20px; /* Reducer mellemrum */
+        }
+    .event-overskrift {
+        font-size: 4em; /* Mindre overskrift */
+         }
+        /* Om Rader */
+    .about-content {
+        flex-direction: column; /* Stabler indholdet vertikalt */
+        gap: 1.5rem; /* Mindre afstand mellem billeder og tekst */
+    }                                                       
+    .about-image img {
+        max-width: 100%; /* Fyld skærmbredden */
+        height: 300px; /* Fast højde */
+        }
+    .about-text {
+        text-align: center; /* Centrer teksten */
+        font-size: 1rem; /* Reduceret tekststørrelse */
+        }
+    .about-title {
+        font-size: 2.5rem; /* Mindre overskrift */
+        }
+    .kontakt-wrapper {
+        width: 90%; /* Boksen fylder 90% af skærmbredden */
+        margin: 0 auto; /* Centrer boksen */
+        }
+    .kontakt-info {
+        grid-template-columns: repeat(2, 1fr); /* To kolonner */
+        gap: 15px; /* Mindre afstand */
+        }
+    .form-row {
+        grid-template-columns: 1fr; /* Én kolonne for formularfelter */
+        }
+    .team img {
+        max-width: 100%;
+        height: auto; /* Bevar proportionerne */
+        }
+    .frivillig-header {
+        font-size: 1.8rem; /* Mindre overskrift */
+        }
+    .frivillig-text {
+        font-size: 1rem;
+        }
+    .situation-section {
+        flex-direction: column; /* Stabler tekst og billede lodret */
+        }
+    .situation-image img {                                                     
+        height: auto;                        
+        }   
+    .footer {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        }
+    .social-media {
+         justify-content: center;
+        }
+    .burger-menu {
+        display: flex; /* Vis burger-menu */
+        }
+    .nav-links {
+        display: none; /* Skjul menuen som standard */
+         flex-direction: column;
+         align-items: center;
+        position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100vh;
+         background: linear-gradient(to bottom, #fff, #f47920);
+         gap: 3rem;
+         justify-content: center;
+         z-index: 100;
+        }
+    .close-menu {
+         position: absolute;
+         top: 1rem;
+         right: 1.5rem;
+         font-size: 3rem;
+         color: #f47920;
+         cursor: pointer;
+         }
+    .vertical-text {
+         display: none; /* Skjul lodret tekst */
+        }
+    .event-card {
+        flex: 1 1 100%; /* Et billede pr. række */
+         }
+    .events {
+        gap: 0.5rem; /* Mindre afstand mellem billeder */
+        }
+    .om-rader-section {
+        padding: 1.5rem 1rem; /* Mindre padding på mobil */
+        }
+    .om-rader-section h1 {
+        font-size: 1.8rem; /* Mindre overskrift på mobil */
+        }
+    .om-rader-section img {
+        margin-bottom: 1rem; /* Mindre afstand under billeder */
+        }
+    .om-rader-section p {
+        font-size: 0.95rem; /* Mindre tekststørrelse */
+        line-height: 1.5;
+        }
+    .kontakt-info {
+        grid-template-columns: 1fr; /* En kolonne */
+        gap: 20px; /* Mindre afstand */
+        }
+    .situation-text {
+        padding: 1rem;
+        }
+    .situation-text h2 {
+        font-size: 2rem; /* Mindre overskrift */
+        }
+    .instagram-post {
+        flex: 1 1 calc(50% - 10px); /* To kolonner */
+        }
+    .about-content {    
+        flex-direction: column-reverse; /* Byt om på tekst og billede */
+        text-align: center; /* Centrer tekst for bedre visning */
+        }
+    .about-image {
+         order: -1; /* Placer billedet øverst */
+        }
+    .about-image img {
+          width: 100%; /* Billedet fylder skærmens bredde */
+          height: auto; /* Bevar billedets proportioner */
+          }
+    .about-text {
+        padding: 1rem; /* Tilføj luft omkring teksten */
+        font-size: 1rem; /* Tilpas tekststørrelsen */
+        line-height: 1.5; /* Bedre læsbarhed */
+        }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        }
+    .footer.social-media {
+        gap: 1rem;
+        }
+    .footer-logo img {
+        max-height: 70px;
+        }
+    .event-grid {
+        grid-template-columns: 1fr; /* Enkelt kolonne */
+        gap: 1.5rem;
+        }
+    .nav-links.menu-open a {
+        font-family: 'Inter', sans-serif;
+        font-size: 3rem; /* Justér størrelsen */
+        font-weight: 1500;
+        color: #000; /* Sort farve */
+
+        }
+        .logo {
+            margin-left: -10px;   
+        }                                                                                                                                                                          
+
+     }

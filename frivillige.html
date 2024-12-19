@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rader</title>
+    <link rel="stylesheet" href="Css/style.css">
+    </head>
+    <body>
+        <body>
+            <header>
+                <a href="index.html" class="logo">
+                    <img src="img/logo_png.png" alt="Radar Logo">
+                </a>
+        
+ <!-- Burger Menu -->
+<div class="burger-menu" id="burgerMenu">
+        <div class="line"></div>
+          <div class="line"></div>
+         <div class="line"></div>
+  </div>
+        
+<!-- Navigation Links -->
+ <nav class="nav-links" id="navLinks">
+     <div class="close-menu" id="closeMenu">&times;</div>
+           <a href="event.html">EVENTS</a>
+           <a href="frivillige.html">FRIVILLIGE</a>
+            <a href="situation.html">RADERS SITUATION</a>
+             <a href="omrader.html">OM RADER</a>
+             <a href="kontakt.html">KONTAKT OS</a>
+            </nav>
+            </header>
+        
+<!-- JavaScript -->
+                <script>
+                const burgerMenu = document.getElementById('burgerMenu');
+                const navLinks = document.getElementById('navLinks');
+                const closeMenu = document.getElementById('closeMenu');
+        
+             // Åbn menu
+                burgerMenu.addEventListener('click', () => {
+                    navLinks.classList.add('menu-open');
+                });
+        
+                // Luk menu
+                closeMenu.addEventListener('click', () => {
+                    navLinks.classList.remove('menu-open');
+                });
+                 </script>
+<!-- Foto af frivillige -->
+<main>
+    <section class="team">
+        <figure>
+            <img src="img/søren.png" alt="Søren Hansen">
+            <small class="image-footnote">train.dk</small>
+            <figcaption>Søren Hansen</figcaption>
+        </figure>
+        <figure>
+            <img src="img/clara.png" alt="Clara Burnay">
+            <small class="image-footnote">train.dk</small>
+            <figcaption>Clara Burnay</figcaption>
+        </figure>
+        <figure>
+            <img src="img/sørenm.png" alt="Søren Madsen">
+            <small class="image-footnote">train.dk</small>
+            <figcaption>Søren Madsen</figcaption>
+        </figure>
+        <figure>
+            <img src="img/simon.png" alt="Simon Lund">
+            <small class="image-footnote">train.dk</small>
+            <figcaption>Simon Lund</figcaption>
+        </figure>
+        <figure>
+            <img src="img/marie.png" alt="Marie Ettrup">
+            <small class="image-footnote">train.dk</small>
+            <figcaption>Marie Ettrup</figcaption>
+        </figure>
+        <figure>
+            <img src="img/mette.png" alt="Mette Appel">
+            <small class="image-footnote">train.dk</small>
+            <figcaption>Mette Appel</figcaption>
+        </figure>
+    </section>
+<aside class="vertical-text">
+    <p>MØD RADERS FRIVILLIGE</p>
+</aside>
+</main>
+<!-- Bølgende tekst -->
+<section class="background-section"></section>
+<svg viewBox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg" class="wave-text">
+    <!-- Stien til at skabe en bølge, der strækker sig helt ud -->
+    <path id="wavePath" d="M0,75 Q250,0 500,75 T1000,75" fill="transparent" />
+    
+    <!-- Tekst placeret langs bølgestien -->
+    <text class="text-on-wave">
+        <textPath href="#wavePath" startOffset="0%">
+            BLIV FRIVILLIG BLIV FRIVILLIG BLIV FRIVILLIG BLIV FRIVILLIG BLIV FRIVILLIG BLIV FRIVILLIG
+        </textPath>
+    </text>
+</svg>
+<!-- Bliv frivillig -->
+<section class="frivillig-section">
+    <h2 class="frivillig-header">BLIV FRIVILLIG HOS RADER</h2>
+    <p class="frivillig-text">
+        I Radar er de frivillige en ekstremt vigtig og skattet medarbejdergruppe, fordi det 
+        ganske enkelt ikke ville kunne lade sig gøre at drive Radar, afvikle koncerter og 
+        formidle den smalle musik uden deres hjælp og tilstedeværelse. Områder som bar, 
+        entré, garderobe, foto, lys og afvikling håndteres primært af frivilliggruppen, der 
+        desuden udfører diverse ad hoc-opgaver, der måtte opstå henover året.
+    </p>
+    <p class="frivillig-contact">
+        Send os en mail på <a href="mailto:frivillig@rader.dk">frivillig@rader.dk</a>
+    </p>
+</section>
+<!-- Footer -->
+<footer>
+    <address>
+        <p>Tlf.: +45 26 71 89 67</p>
+        <p>Mail: <a href="mailto:kontakttrader@gmail.com">kontakttrader@gmail.com</a></p>
+        <p>Karen Wegener Gade 6,<br>8000 Aarhus C</p>
+    </address>
+    <section class="social-media">
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <img src="img/facepng.png" alt="Facebook ikon">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <img src="img/igpng.png" alt="Instagram ikon">
+        </a>
+    </section>
+    <a href="index.html" class="footer-logo">
+        <img src="img/logo_png.png" alt="Radar Logo">
+    </a>
+</footer>

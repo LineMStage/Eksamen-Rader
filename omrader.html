@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rader</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <body>
+        <header>
+            <a href="index.html" class="logo">
+                <img src="img/logo_png.png" alt="Radar Logo">
+            </a>
+    
+ <!-- Burger Menu -->
+ <div class="burger-menu" id="burgerMenu">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+ </div>
+    
+<!-- Navigation Links -->
+<nav class="nav-links" id="navLinks">
+     <div class="close-menu" id="closeMenu">&times;</div>
+     <a href="event.html">Events</a>
+     <a href="frivillige.html">FRIVILLIGE</a>
+     <a href="situation.html">RADERS SITUATION</a>
+     <a href="omrader.html">OM RADER</a>
+     <a href="kontakt.html">KONTAKT OS</a>
+      </nav>
+        </header>
+ <!-- JavaScript Burgermenu -->
+            <script>
+            const burgerMenu = document.getElementById('burgerMenu');
+            const navLinks = document.getElementById('navLinks');
+            const closeMenu = document.getElementById('closeMenu');
+    
+            // Åbn menu
+            burgerMenu.addEventListener('click', () => {
+                navLinks.classList.add('menu-open');
+            });
+    
+            // Luk menu
+            closeMenu.addEventListener('click', () => {
+                navLinks.classList.remove('menu-open');
+            });
+             </script>
+ <!-- Sektion: Om Rader -->
+ <section class="about-rader">
+    <h1 class="about-title">OM RADER</h1>
+    
+    <article class="about-content">
+<!-- Venstre kolonne med billede -->
+        <figure class="about-image">
+            <img src="img/omrader.jpeg" alt="Koncert på Rader">
+        </figure>
+
+<!-- Højre kolonne med tekst -->
+        <p class="about-text">
+            På Radar præsenterer vi et bredt udbud af musikgenrer med både lokale, nationale og internationale artister og altid med et særligt fokus på det eksperimenterende, det alternative og på nichegenrer. Radar interesserer sig for krydsfelterne mellem musik og andre kunstarter og for at eksperimentere med koncert- og præsentationsformater.
+        </p>
+    </article>
+
+    <article class="about-content">
+<!-- Venstre kolonne med tekst -->
+        <p class="about-text highlight-text">
+            Til en <span class="highlight">koncert på Rader</span> kan du <span class="highlight">opdage nye kunstnere</span>, nyde intime <span class="highlight">optrædener</span> og <span class="highlight">føle energien</span> fra et <span class="highlight">passioneret publikum</span>. Radar er et sted, hvor musik, fællesskab og kunst smelter sammen, og hver tone og tekst skaber minder, der varer ved. Det er her, du kan fordybe dig i unikke lyduniverser og lade dig inspirere af levende kultur.
+        </p>
+
+        <!-- Højre kolonne med billede -->
+        <figure class="about-image">
+            <img src="img/omrader2.png" alt="Publikum på Rader">
+        </figure>
+    </article>
+</section>
+<!-- Footer -->
+        <footer>
+            <address>
+                <p>Tlf.: +45 26 71 89 67</p>
+                <p>Mail: <a href="mailto:kontakttrader@gmail.com">kontakttrader@gmail.com</a></p>
+                <p>Karen Wegener Gade 6,<br>8000 Aarhus C</p>
+            </address>
+            <section class="social-media">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="img/facepng.png" alt="Facebook ikon">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="img/igpng.png" alt="Instagram ikon">
+                </a>
+            </section>
+            <a href="index.html" class="footer-logo">
+                <img src="img/logo_png.png" alt="Radar Logo">
+            </a>
+        </footer>

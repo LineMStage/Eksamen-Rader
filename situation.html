@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rader</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Radar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">
+                <img src="img/logo_png.png" alt="Radar Logo">
+            </a>
+    
+<!-- Burger Menu -->
+  <div class="burger-menu" id="burgerMenu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+  </div>
+    
+ <!-- Navigation Links -->
+   <nav class="nav-links" id="navLinks">
+         <div class="close-menu" id="closeMenu">&times;</div>
+          <a href="event.html">EVENTS</a>
+           <a href="frivillige.html">FRIVILLIGE</a>
+          <a href="situation.html">RADERS SITUATION</a>
+          <a href="omrader.html">OM RADER</a>
+          <a href="kontakt.html">Kontakt os</a>
+            </nav>
+        </header>
+    
+ <!-- JavaScript -->
+            <script>
+            const burgerMenu = document.getElementById('burgerMenu');
+            const navLinks = document.getElementById('navLinks');
+            const closeMenu = document.getElementById('closeMenu');
+    
+            // Åbn menu
+            burgerMenu.addEventListener('click', () => {
+                navLinks.classList.add('menu-open');
+            });
+    
+            // Luk menu
+            closeMenu.addEventListener('click', () => {
+                navLinks.classList.remove('menu-open');
+            });
+             </script>
+    <!-- Raders situation -->
+        <section class="rader-situation">
+            <div class="container">
+              <div class="text-content">
+                <h1>Raders Situation</h1>
+                <p>
+                  Fra januar 2025 stopper bevillingen til at fortsætte som regionalt spillested, 
+                  og der arbejdes derfor på en alternativ løsning, der forhåbentlig gør, at Radar kan fortsætte det store arbejde 
+                  med at støtte og underbygge vækstlaget, samt de eksperimenterende og nichede genrer.
+                </p>
+                <p>
+                  Forestil dig en verden uden små spillesteder. Ingen intime koncerter, ingen chancer for at opleve morgendagens 
+                  stjerner i et lille, tæt publikum. Det er den virkelighed, vi står overfor. Rader kæmper for at overleve, men vi 
+                  tror stadig på, at musik og fællesskab kan sejre.
+                </p>
+              </div>
+              <div class="image-container">
+                <div class="orange-box"></div>
+                <img src="img/Situation1.jpg" alt="Koncert scene">
+              </div>
+            </div>
+          </section>
+          
+          <section class="scene-fremtiden">
+            <div class="container">
+              <div class="image-container">
+                <img src="img/situation2.png" alt="Musiker optræder">
+              </div>
+              <div class="text-content">
+                <h2>En scene for fremtidens musik</h2>
+                <p>
+                  Rader er et uundværligt fundament for både det lokale musikmiljø og fællesskabet. 
+                  Det er ikke bare et sted for koncerter – det er en kulturinstitution, der bringer folk sammen 
+                  og giver håb, inspiration og plads til kreativ udfoldelse. At støtte Rader er at investere i musikkens 
+                  fremtid og lokalsamfundets liv og sjæl.
+                </p>
+              </div>
+            </div>
+          
+            <div class="extra-section">
+              <h3>Hvad kan du gøre?</h3>
+              <p>
+                Du kan hjælpe ved at deltage i koncerterne, købe billetter og invitere venner med, så vi får fyldt salen. 
+                Enhver donation eller støtte til vores crowdfunding gør en forskel og hjælper os med at dække de stigende udgifter. 
+                Hvis du har tid og lyst, kan du også melde dig som frivillig og bidrage til at få koncerterne op at stå eller 
+                hjælpe med markedsføring. Samtidig er det en stor hjælp at dele vores opslag på sociale medier og fortælle om Rader 
+                til andre. Endelig kan du støtte kunstnerne, der spiller på Rader, ved at lytte til deres musik, følge dem på 
+                streamingtjenester. Med din hjælp kan vi sikre, at Rader forbliver et levende og kreativt fællesskab.
+              </p>
+            </div>
+          </section>
+<!-- Footer -->
+        <footer>
+            <address>
+                <p>Tlf.: +45 26 71 89 67</p>
+                <p>Mail: <a href="mailto:kontakttrader@gmail.com">kontakttrader@gmail.com</a></p>
+                <p>Karen Wegener Gade 6,<br>8000 Aarhus C</p>
+            </address>
+            <section class="social-media">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="img/facepng.png" alt="Facebook ikon">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="img/igpng.png" alt="Instagram ikon">
+                </a>
+            </section>
+            <a href="index.html" class="footer-logo">
+                <img src="img/logo_png.png" alt="Radar Logo">
+            </a>
+        </footer>

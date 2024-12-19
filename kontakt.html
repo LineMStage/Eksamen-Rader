@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rader</title>
+        <link rel="stylesheet" href="Css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    </head>
+    <body>
+        <body>
+            <header>
+                <a href="index.html" class="logo">
+                    <img src="img/logo_png.png" alt="Radar Logo">
+                </a>
+        
+        <!-- Burger Menu -->
+                <div class="burger-menu" id="burgerMenu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+        
+        <!-- Navigation Links -->
+                <nav class="nav-links" id="navLinks">
+                    <div class="close-menu" id="closeMenu">&times;</div>
+                    <a href="event.html">EVENTS</a>
+                    <a href="frivillige.html">FRIVILLIGE</a>
+                    <a href="situation.html">RADERS SITUATION</a>
+                    <a href="omrader.html">OM RADER</a>
+                    <a href="kontakt.html">KONTAKT OS</a>
+                </nav>
+            </header>
+        
+     <!-- JavaScript -->
+                <script>
+                const burgerMenu = document.getElementById('burgerMenu');
+                const navLinks = document.getElementById('navLinks');
+                const closeMenu = document.getElementById('closeMenu');
+        
+                // Åbn menu
+                burgerMenu.addEventListener('click', () => {
+                    navLinks.classList.add('menu-open');
+                });
+        
+                // Luk menu
+                closeMenu.addEventListener('click', () => {
+                    navLinks.classList.remove('menu-open');
+                });
+                 </script>
+<!-- Kontakt Sektion -->
+<section class="overskrifter">
+    <h1 class="overskrift-sort">Kontakt</h1>
+    <h1 class="overskrift-outline">Kontakt</h1>
+    <h1 class="overskrift-outline lys-outline">Kontakt</h1>
+</section>
+
+<section class="kontakt-wrapper">
+    <div class="kontakt-info">
+        <article>
+            <h2>Adresse</h2>
+            <p>
+                Karen Wegeners<br>
+                Gade 6, 8000<br>
+                Aarhus C
+            </p>
+        </article>
+        <article>
+            <h2>Email</h2>
+            <p>kontakttrader@gmail.com</p>
+        </article>
+        <article>
+            <h2>Telefon</h2>
+            <p>+45 26 71 89 67</p>
+        </article>
+        <article>
+            <h2>Åbningstider</h2>
+            <p>
+                Man - Tor: 12-18<br>
+                Fre - Lørdag: 15-22<br>
+                Søndag: Lukket
+            </p>
+        </article>
+    </div>
+
+    <!-- Formular -->
+    <!-- Tilføj `id="kontaktForm"` her -->
+    <form id="kontaktForm" class="kontakt-formular" method="POST">
+        <div class="form-row">
+            <input type="text" name="name" placeholder="navn" required>
+            <input type="email" name="email" placeholder="e-mail" required>
+        </div>
+        <textarea name="message" placeholder="besked" rows="6" required></textarea>
+        <button type="submit">SEND</button>
+    </form>
+
+    <!-- Besked -->
+    <p id="successMessage" style="display: none; color: rgb(0, 0, 0); font-weight: bold; margin-top: 1rem;">
+        Tak for din besked!
+    </p>
+</section>
+
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("kontaktForm");
+            const successMessage = document.getElementById("successMessage");
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault(); // Forhindrer standard formularindsendelse
+                successMessage.style.display = "block"; // Viser beskeden
+                form.reset(); // Nulstiller formularfelterne
+    });
+});
+</script>
+<!-- Kort Sektion -->
+<h2 class="kort-overskrift">FIND OS</h2>
+<section id="kort"></section>
+
+ <!-- Kort -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+ <script>
+     document.addEventListener("DOMContentLoaded", function () {
+         const map = L.map('kort').setView([56.1533554, 10.1890733], 15);
+
+         // Mørkt kort fra CartoDB
+         L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+             attribution: '© OpenStreetMap & CartoDB',
+             maxZoom: 19
+         }).addTo(map);
+
+         // Markør på Raders placering
+         L.marker([56.1533554, 10.1890733]).addTo(map)
+             .bindPopup('<b>Rader</b><br>Karen Wegeners Gade 6, Aarhus.')
+             .openPopup();
+     });
+
+
+ </script>
+<!-- fotter -->
+        <footer>
+            <address>
+                <p>Tlf.: +45 26 71 89 67</p>
+                <p>Mail: <a href="mailto:kontakttrader@gmail.com">kontakttrader@gmail.com</a></p>
+                <p>Karen Wegener Gade 6,<br>8000 Aarhus C</p>
+            </address>
+            <section class="social-media">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="img/facepng.png" alt="Facebook ikon">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="img/igpng.png" alt="Instagram ikon">
+                </a>
+            </section>
+            <a href="index.html" class="footer-logo">
+                <img src="img/logo_png.png" alt="Radar Logo">
+            </a>
+        </footer>

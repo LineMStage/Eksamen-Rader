@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rader</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">
+                <img src="img/logo_png.png" alt="Radar Logo">
+            </a>
+    
+<!-- Burger Menu -->
+            <div class="burger-menu" id="burgerMenu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+    
+ <!-- Navigation Links -->
+            <nav class="nav-links" id="navLinks">
+                <div class="close-menu" id="closeMenu">&times;</div>
+                <a href="event.html">Events</a>
+                <a href="frivillige.html">FRIVILLIGE</a>
+                <a href="situation.html">RADERS SITUATION</a>
+                <a href="omrader.html">OM RADER</a>
+                <a href="kontakt.html">KONTAKT OS</a>
+            </nav>
+        </header>
+    
+<!-- JavaScript -->
+            <script>
+            const burgerMenu = document.getElementById('burgerMenu');
+            const navLinks = document.getElementById('navLinks');
+            const closeMenu = document.getElementById('closeMenu');
+    
+            // Åbn menu
+            burgerMenu.addEventListener('click', () => {
+                navLinks.classList.add('menu-open');
+            });
+    
+            // Luk menu
+            closeMenu.addEventListener('click', () => {
+                navLinks.classList.remove('menu-open');
+            });
+             </script>
+<!-- Event Kalender -->
+<main>
+    <section class="event-container">
+        <h1 class="event-overskrift">EVENT KALENDER</h1>
+        <p class="event-beskrivelse">
+            Oplev spændende koncerter og arrangementer med alt fra jazz og pop til studieaftener. 
+            Vi ses til gode vibes, nye stemmer og uforglemmelige oplevelser.
+        </p>
+    <!-- første række -->     
+        <section class="event-grid">
+            <figure>
+                <a href="ev">
+                    <img src="img/event1.png" alt="Allen Anjeh">
+                </a>
+                <button class="koeb-knap">Køb billet</button>
+            </figure>
+            <figure>
+                <a href="billet2.html">
+                    <img src="img/event2.png" alt="Baryl">
+                </a>
+                <button class="koeb-knap">Køb billet</button>
+            </figure>
+            <figure>
+                <a href="billet3.html">
+                    <img src="img/event3.png" alt="OTOOTO">
+                </a>
+                <button class="koeb-knap">Køb billet</button>
+            </figure>
+<!-- Anden række -->
+        <figure>
+            <img src="img/event4.png" alt="Artist 4">
+            <figcaption>
+            </figcaption>
+            <a href="#" class="koeb-knap">KØB BILLET</a>
+        </figure>
+        <figure>
+            <img src="img/event5.png" alt="Artist 5">
+            <figcaption>
+            </figcaption>
+            <a href="#" class="koeb-knap">KØB BILLET</a>
+        </figure>
+        <figure>
+            <img src="img/event6.png" alt="Artist 6">
+            <figcaption>
+            </figcaption>
+            <a href="#" class="koeb-knap">KØB BILLET</a>
+        </figure>
+<!-- Tredje række -->
+        <figure>
+            <img src="img/event7.png" alt="Artist 7">
+            <figcaption>
+            </figcaption>
+            <a href="#" class="koeb-knap">KØB BILLET</a>
+        </figure>
+        <figure>
+            <img src="img/event8.png" alt="Artist 8">
+            <figcaption>
+            </figcaption>
+            <a href="#" class="koeb-knap">KØB BILLET</a>
+        </figure>
+        <figure>
+            <img src="img/event9.png" alt="Artist 9">
+            <figcaption>
+            </figcaption>
+            <a href="#" class="koeb-knap">KØB BILLET</a>
+        </figure>
+         
+</main>
+ <!-- Footer -->
+        <footer>
+            <address>
+                <p>Tlf.: +45 26 71 89 67</p>
+                <p>Mail: <a href="mailto:kontakttrader@gmail.com">kontakttrader@gmail.com</a></p>
+                <p>Karen Wegener Gade 6,<br>8000 Aarhus C</p>
+            </address>
+            <section class="social-media">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="img/facepng.png" alt="Facebook ikon">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="img/igpng.png" alt="Instagram ikon">
+                </a>
+            </section>
+            <a href="index.html" class="footer-logo">
+                <img src="img/logo_png.png" alt="Radar Logo">
+            </a>
+        </footer>
